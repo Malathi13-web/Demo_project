@@ -1,0 +1,104 @@
+    <div class="bg-image" >
+     <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            
+            <div class="box"><p> Make a Transfer</p></div>
+            <div class=" border border-info mt-3 rounded my_form">
+                   <form>
+                      <div class="mb-10">
+                        <label class="form-label">From Account</label>
+                   <input type="text" name="to_money" class="form-control"   placeholder="Free checking(4592)-$5800" disabled>
+                        </div>
+                        
+                        <div  class="mb-10">
+                          <label class="form-label">To Account</label>
+
+                       <input type="text" name="from_money" class="form-control"  placeholder="Enter Account details..." >
+                        </div>
+
+                        <div  class="mb-10">
+                          <label class="form-label">Amount</label>
+
+                       <input type="text" name="from_money" class="form-control"  placeholder="$0.00" >
+                        </div>
+
+                   
+                        <div class="nav-item">
+                          <label class="form-label"></label>
+                          <label class="form-label"></label>
+                          <button type="button"  class="btn btn-warning btn-md" data-toggle="modal" data-target="#exModal">SUBMIT</button>
+                           <!--modal-->
+                          <div class="modal fade" id="exModal" tabindex="-1" aria-labelledby="exmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                               <div class="modal-header">
+                                <h5 class="modal-title" id="exmodalLabel">Preview the TO ACCOUNT and AMOUNT Entered</h5>
+                                <i>if wrong,please click on cross mark </i>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                 <div class="modal-body">
+                                  <form>
+                                   <div>
+                                      <label>TO ACCOUNT</label>
+                                      <input type="text" class="form-control form-control-sm" name="p_account"  value="from_money" disabled> 
+                                   </div>
+                                   <div>
+                                    <label>AMOUNT</label>
+                                    <input type="text" class="form-control form-control-sm" name="p_amount"> 
+                                 </div>
+ <!--pop-up for make transfer-->
+ <div class="nav-item">
+  <label class="form-label1"></label>
+  <label class="form-label1"></label>
+  <button type="button"  class="btn btn-warning btn-md"data-toggle="modal" data-target="#exModal1">MAKE A TRANSFER</button>
+   <!--modal-->
+  <div class="modal fade1" id="exModal1" tabindex="-1" aria-labelledby="exmodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-header">
+        <h5 class="modal-title" id="exmodalLabel">Amount Successfully Transfered </h5> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+        <!---END of PO up-->
+                                                             
+                                  </form>
+                                     
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                              
+                              
+
+                     </div>
+                   </form>
+
+
+
+                  </div>
+
+
+
+        </div>
+        <div class="col-lg-6"><div class="box">Recent Transfer</div>
+        </div>
+          </div>
+            </div> 
+            </div>
+
+
+            <router-outlet></router-outlet>
+
+
+
